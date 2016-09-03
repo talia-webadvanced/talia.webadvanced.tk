@@ -2,8 +2,14 @@
 <html>
     <head>
         <title>(づ｡◕‿‿◕｡)づ</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
         <script src="scripts.js"></script>
         
     </head>
@@ -19,27 +25,32 @@
         <p>Welcome to Javascript</p>
         <a href="#">First Assignment Click Here!</a>
         
-        <div class="window description">
-          <div class="inner">
-            <div class="header">
-              <!--<div class="icon"></div>-->
-                  Select Assignment
-              <div class="buttons"></div>
+        <div class="window description" id="draggable">
+            <div class="inner">
+                <div class="header">
+                      Select Assignment
+                </div>
+            
+                <div class="content">
+                    <div class="inner">
+                        <div class="left">
+                            <div id="windowIcon1"></div>
+                        </div>
+                        <div class="right">
+                            <p>To load assignment, select assignment from the dropdown the assignment name and click "OK"</p>
+                            <br><p>Assignments: </p>
+                            <div class="selectorWindow">
+                                <select size="5">
+                                    <option>Assignment 1: Hello World!</option>
+                                    <option>Some other title to click</option>
+                                    <option>Another website</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
             </div>
-            <!--<div class="actions">-->
-            <!--  Posted at XX:YY zz, with AA,BBB notes-->
-            <!--</div>-->
-            <div class="content">
-              <div class="inner">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci itaque magnam facere quasi ratione repudiandae soluta fugiat distinctio! Cupiditate obcaecati quia minus aut eos repellat itaque quisquam possimus dicta.</p>
-              </div>
-            </div>
-            <!--<div class="content">-->
-            <!--  <div class="inner">-->
-            <!--    <p><b>Please note: the images I used in this have been lost. You'll need to recreate the UI buttons from a Windows 98 screenshot.</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis adipisci itaque magnam facere quasi ratione repudiandae soluta fugiat distinctio! Cupiditate obcaecati quia minus aut eos repellat itaque quisquam possimus dicta.</p>-->
-            <!--  </div>-->
-            <!--</div>-->
-          </div>
         </div>
         
         <button id="vidpause">Pause</button>

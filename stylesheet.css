@@ -29,3 +29,130 @@ video#bgvid {
 }
 
 .stopfade { opacity: .5; }
+
+
+.window { 
+  max-width: 500px;
+  font-family: 'Arial',sans-serif;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-top-color: #dfdfdf;
+  border-left-color: #dfdfdf;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  text-align: left;
+}
+
+.window > .inner {
+  border: 1px solid;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+}
+
+.window .header {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.window.description .header {
+  margin: 2px 2px 0;
+  padding: 1px 2px;
+  color: #fff;
+  background: linear-gradient(to right, #000080, #1084d0);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.window .header > .icon {
+  background: url('http://dl.dropboxusercontent.com/u/16697297/themes/releases/win98_v2/win98_notepad_icon.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+  .window .header > .icon {
+    background-image: url('http://dl.dropboxusercontent.com/u/16697297/themes/releases/win98_v2/win98_notepad_icon@2x.png');
+    background-size: 16px 16px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+  .window.description .header > .icon {
+    background-image: url('http://dl.dropboxusercontent.com/u/16697297/themes/releases/win98_v2/win98_windows_icon@2x.png');
+    background-size: 16px 16px;
+  }
+}
+
+.window.description .header > .buttons {
+  background-position: -35px 0;
+  width: 15px;
+  height: 14px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+  .window .header > .buttons {
+    background-image:   url('http://dl.dropboxusercontent.com/u/16697297/themes/releases/win98_v2/win98_window_controls@2x.png');
+    background-size: 50px 14px;
+  }
+}
+
+.window .content {
+  margin: 0 2px 2px 2px;
+  border: 1px solid;
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  font-size: 13px;
+}
+
+.window .content > .inner {
+  background: #fff;
+  border: 1px solid;
+  border-top-color: #000;
+  border-left-color: #000;
+  border-bottom-color: #dfdfdf;
+  border-right-color: #dfdfdf;
+  padding: 7px 10px;
+}
+
+.window.description .content,
+.window.description .content > .inner {
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+
+p {
+  margin: 0;
+}
+
+select{
+    width:100%;
+}
+
+.right, .left{
+    float:left;
+}
+
+.clear{
+    clear:both;
+}
+
+#windowIcon1{
+    background-image: url(window-icon-1.png);
+    background-repeat:no-repeat;
+    background-size:100%;
+    width: 40px;
+    height: 40px;
+}
