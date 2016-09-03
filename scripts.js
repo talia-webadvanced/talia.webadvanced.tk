@@ -37,5 +37,9 @@ $('select').change(function(){
          window.location = url;
     })
 });
+
+$("#cancel").click(function(){
+  (".window").css("display", "none");
+});
   
 });
