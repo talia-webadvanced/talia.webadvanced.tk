@@ -1,6 +1,12 @@
+@font-face {
+    font-family: customFont;
+    src: url('micross.ttf') format("truetype");
+}
+
 body{
      margin: 0 auto;
      text-align: center;
+     font-family: 'customFont', 'Arial', sans-serif;
 }
 
 h1 {
@@ -33,7 +39,6 @@ video#bgvid {
 
 .window { 
   max-width: 500px;
-  font-family: 'Arial',sans-serif;
   background: #c0c0c0;
   border: 1px solid;
   border-top-color: #dfdfdf;
