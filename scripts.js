@@ -27,8 +27,8 @@ function vidFade() {
 //   }
 // })
 
-function() {
-    ( "#draggable" ).draggable();
-  };
+$(function() {
+    $("#draggable" ).draggable();
+  });
   
 });
