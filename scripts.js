@@ -31,4 +31,11 @@ $(function() {
     $("#draggable" ).draggable();
   });
   
+$('select').change(function(){
+    var url = $(this).val();
+    $('#ok').onclick(function(){
+         window.location = url;
+    })
+});
+  
 });
