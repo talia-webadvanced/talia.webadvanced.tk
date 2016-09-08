@@ -46,6 +46,7 @@ video#bgvid {
   border-right-color: #000;
   border-bottom-color: #000;
   text-align: left;
+  margin: auto;
 }
 
 .window > .inner {
@@ -169,3 +170,8 @@ select{
     margin-top:5px;
     margin-left:5px;
 }
+
+/*select option:clicked{*/
+/*  color:white;*/
+/*  background:#000080 ;*/
+/*}*/

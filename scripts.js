@@ -39,7 +39,7 @@ $('select').change(function(){
 });
 
 $("#cancel").click(function(){
-  (".window").css("display", "none");
+  $(".window").css("display", "none");
 });
   
 });
