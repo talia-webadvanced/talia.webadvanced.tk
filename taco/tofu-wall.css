@@ -60,12 +60,11 @@ body{
 
 
 .taliaRhino{
-	width: 150px;
-	height:30%;
-	background-image:url(images/rhino.png);
-	background-size:contain;
-	background-repeat: no-repeat;
-    background-position: left top;
+	width:100px;
+	height:100px;
+	background-color:purple;
+	position:absolute;
+	bottom:0;
 }
 
 .tofuWall{
