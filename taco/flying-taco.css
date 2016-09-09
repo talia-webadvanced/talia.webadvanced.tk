@@ -1,0 +1,211 @@
+html { 
+  background: url(images/background-placeholder.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+	margin:0 auto;
+}
+
+@font-face {
+	font-family: pixel_font;
+	src: url('pixel-font.ttf');
+}
+
+.wrapper{
+	height:87vh;
+	width:100%;
+	position:relative;
+	/* background-color:black; */
+}
+
+.bottom{
+	position:absolute;
+	bottom:0;
+	height:80%;
+	width: 90%;
+	margin: 0 5% 0 5%;
+	/* background-color:green; */
+}
+
+
+.flyingTaco{
+	width: 30%;
+	height:20%;
+	float:right;
+	background-image:url(images/flying-taco.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-top:10%;
+}
+
+.rhinoSombrero{
+	width: 20%;
+	height:30%;
+	background-image:url(images/rhino-sombrero.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    bottom:0;
+    position:absolute;
+    }
+
+.rhinoWings{
+	width: 20%;
+	height:35%;
+	background-image:url(images/rhino-wings.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    bottom:0;
+    position:absolute;
+    }
+
+#draggableRhino{
+	position:fixed;
+	height:15%;
+}
+
+ 
+/* 
+.rhinoWings, .flyingTaco{
+	border: 3pt solid black;
+}
+ */
+
+
+.clear{
+	clear:both;
+}
+
+.toolbar{
+	height: 70vh;
+	margin-top: 5vh;
+	margin-bottom: 25vh;
+	margin-left: 5vh;
+	width: 25vh;
+}
+
+.modalContainer{
+	height:100vh;
+	width:100%;
+	position:fixed;
+	top:0;
+	bottom:0;
+	
+	-moz-animation-name: slideIn;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-duration: 2s;
+
+    -webkit-animation-name: slideIn;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2s;
+
+    animation-name: slideIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+
+@-moz-keyframes slideIn {
+    0% {
+        -moz-transform: translateY(-100%);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+.dialog{
+	background-image: url('images/dialog-flying-taco.png');
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position:fixed;
+	width: 60.33vh;
+	height:40vh;
+	margin-left: 30%;
+	padding:2%;
+	padding-top:25vh;
+	font-family:pixel_font, 'Verdana', sans-serif;
+	font-size: 2.0vh;	
+}
+
+.button{
+	width:20vh;
+	background-image: url('images/button-go.png');
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:200px;
+}
+
+.button:hover{
+	background-image: url('images/button-go-rainbow.png');
+}
+
+.resources{
+	width:100%;
+	background-image: url('images/button-resources.png');
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height:300px;
+}
+
+.resources:hover{
+	background-image: url('images/button-resources-rainbow.png');
+}
+
+.tacoCount img{
+	width: 100%;
+	height:auto;
+}
+
+.resources img{
+	width: 100%;
+	height:auto;
+}
+
+.resourcesImgs img{
+	width: 100%;
+	height:auto;
+}
+
+
+.wings{
+	width: 150px;
+	height:80%;
+	background-image:url(images/wings.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: left top;
+    }
+
+
+

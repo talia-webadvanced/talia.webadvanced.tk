@@ -6,18 +6,81 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!--<link rel="stylesheet" type="text/css" href="stylesheet.css">-->
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
         
-        <!--<script src="jquery.js"></script>-->
-        <!--<script src="jquery-ui.js"></script>-->
-        <!--<script src="scripts.js"></script>-->
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="scripts.js"></script>
         
     </head>
 
     <body>
         
-        Lol hi.
+        <video poster="chicken-vid.jpg" id="bgvid" playsinline autoplay muted>
+            <!--<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
+            <source src="chicken-vid.mp4" type="video/mp4">
+        </video>
         
+        <div class="window description" id="draggable">
+            <div class="inner">
+                <div class="header">
+                      Select Assignment
+                </div>
+            
+                <div class="content">
+                    <div class="inner">
+                        
+                        <div class="left">
+                            <div id="windowIcon1"></div>
+                        </div>
+                        
+                        <div class="right">
+                            <p>To load assignment, select the assignment name from the dropdown and click "OK"</p>
+                        </div>
+                        <div class="clear"></div>
+                        
+                        <br><p>Assignments: </p>
+                        
+                            <div class="window_content">
+                            <div class="window_content_inner">
+                            <div class="selectorWindow">
+                                <ul>
+                                    <li data-url="http://www.google.com/">Class Website</li>
+                                    <li data-url="taco/index.html">Assignment 1: Hello World!</li>
+                                    <!-- 
+<li>Some other title to click</li>
+                                    <li>Another website</li>
+ -->
+                                </ul>
+                            </div>
+                        	</div>
+                        	</div>
+                        	
+                        <div class="buttons">
+							<div class="buttonContainer">
+							<button class="button" id="cancel">
+								Cancel
+							</button>
+							</div>
+							<div class="buttonSpace"></div>
+							<div class="buttonContainer" id="buttonOutline">
+							<button class="button" id="ok">
+								OK
+							</button>
+							</div>
+							<div class="clear">
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <button id="vidpause">Pause</button> -->
+
     </body>
 
 </html>

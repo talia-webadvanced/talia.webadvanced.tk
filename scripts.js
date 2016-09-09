@@ -31,15 +31,29 @@ $(function() {
     $("#draggable" ).draggable();
   });
   
-$('select').change(function(){
-    var url = $(this).val();
-    $('#ok').click(function(){
-         window.location = url;
-    })
-});
+// $('select').change(function(){
+//     var url = $(this).val();
+//     $('#ok').click(function(){
+//          window.location = url;
+//     })
+// });
 
 $("#cancel").click(function(){
   $(".window").css("display", "none");
 });
-  
+
+$('ul li').click(function(){
+	
+	$('ul li').css({"background-color": "white", "color":"black","border-style": "solid", "border-color": "white", "border-width": "1px"});
+	
+	$(this).css({"background-color": "#000080", "color": "white", "border-style": "dotted", "border-color": "yellow", "border-width": "1px"});
+
+
+	var target = $(this).attr("data-url");
+  	$('#ok').click(function(){
+         window.location = target;
+    })
+});
+    
+    
 });

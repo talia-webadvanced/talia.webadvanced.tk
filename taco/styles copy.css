@@ -1,0 +1,112 @@
+html { 
+  background: url(images/background-placeholder.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+	margin:0 auto;
+}
+
+.wrapper{
+	height:87vh;
+	width:100%;
+	position:relative;
+	/* background-color:black; */
+}
+
+.bottom{
+	position:absolute;
+	bottom:0;
+	height:70%;
+	width: 90%;
+	margin: 0 5% 0 5%;
+	/* background-color:green; */
+}
+
+.boundaries{
+	/* background-color:red; */
+	width:60%;
+	height:100%;
+	float:left;
+}
+
+.taliaStanding{
+	height:50%;
+	width:20%;
+	background-image:url(images/talia-standing-placeholder-3.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    bottom:0;
+    position:absolute;
+}
+
+.taliaStandingHighlight{
+	width: 30%;
+	height:100%;
+	background-image:url(images/talia-standing-placeholder-3-yellow.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+.taliaRhino{
+	width:100px;
+	height:100px;
+	background-color:purple;
+	position:absolute;
+	bottom:0;
+}
+
+.tofuWall{
+	width: 25%;
+	height:100%;
+	float:left;
+	background-image:url(images/tofu-wall.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-left:-8%;
+}
+
+.taco{
+	width: 10%;
+	height:100%;
+	float:left;
+	background-image:url(images/taco.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-left:5%;
+    
+}
+
+.rhino{
+	width: 300px;
+	height:100%;
+	background-image:url(images/rhino.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+    background-position: left top;
+    }
+
+#draggableRhino{
+	position:fixed;
+	height:15%;
+}
+
+/* 
+#taliaStanding, #draggableRhino{
+	border: 3pt solid black;
+}
+ */
+
+.clear{
+	clear:both;
+}
+
+
