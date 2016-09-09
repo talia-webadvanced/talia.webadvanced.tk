@@ -13,7 +13,7 @@
  	});
  
  
- 	// $(".button").hide();
+ 	$(".button").hide();
  
 		function typeText(){	
 			var str = "Something smells fishy. . . and by fishy I mean the delicious Fish Taco, the Taco Fish!<br>Try to catch him to piss off the stupid vegan queen.<br><br>Hint: Ask for help from Jedediah, the magical manatee who thinks he’s a narwhal.",
