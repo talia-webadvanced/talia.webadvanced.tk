@@ -52,7 +52,7 @@ body{
     background-position: center bottom;
     bottom:0;
     position:absolute;
-    transition:3s;
+    /*transition:3s;*/
 }
 
 .taliaStandingHighlight{
