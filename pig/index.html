@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>paper.js test 1.6  |  shapes + added points</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+  
+  <script type="text/javascript" src="paper-full.min.js"></script>
+  <script type="text/javascript" src="randomColor.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  
+  // var legPosition = 0;
+  
+  
+  
+  <script type="text/paperscript" canvas="myCanvas"> 
+
+  
+  //random number between two points:
+  //Math.floor(Math.random()*(max-min+1)+min);
+  var x3 = Math.floor(Math.random() * (800-200+1) + 200);
+  var x1Max = x3-200;
+  var x1 = Math.floor(Math.random() * (x1Max-0+1) + 0);
+  var x2Min = x1+50;
+  var x2Max = x3-50;
+  var x2 = Math.floor(Math.random() * (x2Max-x2Min+1) + x2Min);
+  var x4 = Math.floor(Math.random() * (x2Max-x2Min+1) + x2Min);
+  
+  var y4 = Math.floor(Math.random() * (800-200+1) + 200);
+  var y2Max = y4-200;
+  var y2 = Math.floor(Math.random() * (y2Max-0+1) + 0);
+  var y1Min = y2+50;
+  var y1Max = y4-50;
+  var y1 = Math.floor(Math.random() * (y1Max-y1Min+1) + y1Min);
+  var y3 = Math.floor(Math.random() * (y1Max-y1Min+1) + y1Min);
+  
+  //legPosition = x, y coordinates
+  
+  
+  //Color randomness
+  var randRed = Math.random() * (1-.7)+.7;
+  var randBlue = Math.random() * (.5-0)+0;
+  var randHue = Math.random() * (4-0)+0;
+  var randSat = Math.random() * (1-0)+0;
+  var randLight = Math.random() * (1-.6)+.6;
+  console.log("random red: " + randRed + ", random blue: " + randBlue + ", random hue: " + randHue + ", random saturation: " + randSat + ", random brightness: " + randLight );
+  
+
+
+	
+    console.log("X1: " + x1 + ", X2: " + x2 + ", X3: " + x3 + ", X4: " + x4);
+	console.log("Y1: " + y1 + ", Y2: " + y2 + ", Y3: " + y3 + ", Y4: " + y4);
+	
+	var testPath = new Path();
+    
+  
+	testPath.strokeColor = "black";
+    testPath.strokeWeight = 3;
+	//testPath.fullySelected = true;
+    
+    testPath.fillColor="pink";
+    //testPath.fillColor.red = randRed;
+    //testPath.fillColor.blue = randBlue;
+    //testPath.fillColor.hue = randHue;
+    //testPath.fillColor.saturation = randSat;
+    //testPath.fillColor.brightness = randLight;
+	
+	var point1 = new Point(x1,y1);
+	var point2 = new Point(x2,y2);
+	var point3 = new Point(x3,y3);
+	var point4 = new Point(x4,y4);
+	
+	testPath.add(point1);
+	testPath.add(point2);
+	testPath.add(point3);
+	testPath.add(point4);
+	
+    var negative = -1;
+    
+    
+    //testPath.segments[0].selected = true;
+    //testPath.segments[1].selected = true;
+	
+
+		//
+		//inserting more points, QUADRANT 1
+	
+	
+		//Declare the number of points in quadrant 1 to be a random number between 1 and 25
+        var numOfPts = Math.floor(Math.random() * (25-0+1) + 0);
+        
+        console.log("The number of points in Q1 are: " + numOfPts)
+        
+        for (var i = 0; i < numOfPts; i++) {
+            var newX = ((x2-x1)/numOfPts)*i;
+            var newY = ((y1-y2)/numOfPts)*i*negative;
+            //testPath.insert(i, new Point(newX+x1, newY+y2));
+            
+        }
+  
+        var startingPoint = numOfPts + 2;
+        numOfPts = Math.floor(Math.random() * (25-0+1) + 0);
+          
+        console.log("Insert " + numOfPts + " at position " + startingPoint);
+          
+        for (var i = 1; i < numOfPts; i++) {
+              var newX = ((x3-x2)/numOfPts)*i;
+              var newY = ((y2-y3)/numOfPts)*i;
+              //testPath.insert(startingPoint, new Point(newX+x2, newY+y2));
+              
+        }
+	
+
+    
+
+    testPath.closed = true;
+    testPath.position = view.center;
+    testPath.smooth();
+    
+    
+    ///////////
+    
+    
+    //random number between two points:
+    //Math.floor(Math.random()*(max-min+1)+min);
+    var headx3 = Math.floor(Math.random() * (300-75+1) + 75);
+    var headx1Max = headx3-75;
+    var headx1 = Math.floor(Math.random() * (headx1Max-0+1) + 0);
+    var headx2Min = headx1+10;
+    var headx2Max = headx3-10;
+    var headx2 = Math.floor(Math.random() * (headx2Max-headx2Min+1) + headx2Min);
+    var headx4 = Math.floor(Math.random() * (headx2Max-headx2Min+1) + headx2Min);
+    
+    var heady4 = Math.floor(Math.random() * (300-75+1) + 75);
+    var heady2Max = heady4-75;
+    var heady2 = Math.floor(Math.random() * (heady2Max-0+1) + 0);
+    var heady1Min = heady2+5;
+    var heady1Max = heady4-5;
+    var heady1 = Math.floor(Math.random() * (heady1Max-heady1Min+1) + heady1Min);
+    var heady3 = Math.floor(Math.random() * (heady1Max-heady1Min+1) + heady1Min);
+    
+    var head = new Path();
+    
+    
+    //head.fullySelected = true;
+    head.fillColor="pink";
+    
+    var headpoint1 = new Point(headx1,heady1);
+    var headpoint2 = new Point(headx2,heady2);
+    var headpoint3 = new Point(headx3,heady3);
+    var headpoint4 = new Point(headx4,heady4);
+    
+    head.add(headpoint1);
+    head.add(headpoint2);
+    head.add(headpoint3);
+    head.add(headpoint4);
+    
+    
+    head.closed=true;
+    head.smooth();
+    head.strokeColor = "#FF69B4";
+    
+    head.position = testPath.segments[0].point;
+    
+    //head.segments[0].selected = true;
+    //head.segments[1].selected = true;
+    
+	
+  
+  </script>
+  
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="left">
+                Always a New Pig
+            </div>
+            <div class="right">
+                <div class="circleBox">
+                    <div class="questionMark">?</div>
+                    <div class="close">
+                        <div id="line1">
+                        <div id="line2">
+                    </div>
+                    <div class="boxText">
+                        We are all different.<br>And we are all pigs.<br>Oink.
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </header>
+    </div>
+<!--    <div class="line"></div>-->
+	<canvas id="myCanvas" resize="true" stats></canvas>
+    
+    <div class="legs"></div>
+    
+    // fixed
+    // top-left coordinate
+    // z-index low
+    // positioning? -- Global Variable before paper.js --
+    
+</body>
+
+</html>
